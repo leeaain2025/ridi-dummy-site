@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>정보 변경 - 리디</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f8ce6'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='16' font-weight='900' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header"></div>
+<main class="wrap">
+  <h1 class="page-title">정보 변경</h1>
+  <div class="my">
+    <aside class="side" id="side"></aside>
+    <section>
+      <div class="panel">
+        <h3>기본 정보</h3>
+        <ul class="info-list" id="account-info"></ul>
+      </div>
+      <div class="panel">
+        <h3>보안</h3>
+        <ul class="info-list">
+          <li><span class="k">비밀번호</span><span class="v" id="pw-status">••••••••</span><a class="act blue" href="password.html" id="go-password">비밀번호 변경</a></li>
+          <li><span class="k">2단계 인증</span><span class="v">사용 안 함</span><a class="act" href="#">설정</a></li>
+          <li><span class="k">로그인 기기 관리</span><span class="v">1대 로그인 중</span><a class="act" href="#">관리</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/mypage.js"></script>
+<script>RIDI.renderMypage("account");</script>
+</body>
+</html>
